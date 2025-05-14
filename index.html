@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NRC 588 Web GIS Final Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-white shadow">
+    <div class="container mx-auto p-6">
+      <h1 class="text-3xl font-bold">NRC 588 Web GIS Final Portfolio</h1>
+      <p class="mt-2">Interactive mapping projects showcasing interactivity, accessibility, and responsive design.</p>
+    </div>
+  </header>
+  <main class="container mx-auto py-8 space-y-12">
+
+    <!-- Amherst Campus Locations Map -->
+    <section class="bg-white rounded-lg shadow p-6">
+      <h2 class="text-2xl font-semibold mb-4">Amherst Campus Locations Map</h2>
+      <a href="https://zparshah.github.io/umass-gis-portfolio/amherst_map.html" target="_blank" rel="noopener noreferrer">
+        <img src="screenshots/amherst-map-thumb.png" alt="Thumbnail of Amherst Campus Locations Map" class="w-full mb-4 rounded">
+      </a>
+      <p>This interactive map highlights five key UMass Amherst landmarks—Campus Pond, Minuteman Statue, Du Bois Library Classroom, Morrill Geosciences, and Holdsworth Environmental Conservation. Built using the Google Maps JavaScript API and AdvancedMarkerElement, it auto‑zooms to fit all markers on load, offers click‑activated info pop‑ups, and includes a Dark / Light toggle and “📍 Me” geolocation button. Improvements since the initial submission reflect lecture and demo learnings on fitBounds, theming, and interactive UI components, ensuring enhanced usability and mobile responsiveness.</p>
+      <details class="mt-4">
+        <summary class="font-medium cursor-pointer">What’s new since the initial map submission?</summary>
+        <ul class="list-disc list-inside mt-2">
+          <li>Swapped basic Marker for AdvancedMarkerElement</li>
+          <li>Wrapped markers in LatLngBounds with map.fitBounds(bounds)</li>
+          <li>Added InfoWindow pop‑ups on marker click</li>
+          <li>Built Dark / Light toggle using CSS variables</li>
+          <li>Implemented “📍 Me” geolocation button</li>
+          <li>Refactored CSS for viewport‑filling responsive map container</li>
+          <li>Added alt text and external link best‑practices</li>
+        </ul>
+      </details>
+      <p class="mt-4">
+        <a href="https://zparshah.github.io/umass-gis-portfolio/amherst_map.html" class="inline-block bg-blue-600 text-white py-2 px-4 rounded" target="_blank" rel="noopener noreferrer">
+          🚀 Launch map
+        </a>
+      </p>
+    </section>
+
+    <!-- Healthcare Accessibility Web App -->
+    <section class="bg-white rounded-lg shadow p-6">
+      <h2 class="text-2xl font-semibold mb-4">Healthcare Accessibility Web App</h2>
+      <a href="https://umass-amherst.maps.arcgis.com/home/item.html?id=d222d66fd018437cb51ed1811a5288c5" target="_blank" rel="noopener noreferrer">
+        <img src="screenshots/healthcare-accessibility-thumb.png" alt="Thumbnail of Healthcare Accessibility Web App" class="w-full mb-4 rounded">
+      </a>
+      <p>This ArcGIS Online web app visualizes hospital coverage zones, 10‑minute drive‑time areas, counts of health centers per town, nearest hospital per census block, and underserved regions identified via overlay analysis. Interactive filters allow users to toggle between buffer and drive‑time analyses, adjust symbology with a color‑blind friendly palette, and search addresses using the Nearby widget. Enhancements include redesigned pop‑ups, mobile‐responsive layouts, and embedded statistical summaries for data‐driven decision‐making.</p>
+      <details class="mt-4">
+        <summary class="font-medium cursor-pointer">What’s new since the initial ArcGIS app submission?</summary>
+        <ul class="list-disc list-inside mt-2">
+          <li>Re‑styled symbology with a color‑blind safe palette</li>
+          <li>Optimized pop‑up content to remove scrollbars</li>
+          <li>Added Nearby widget for address search</li>
+          <li>Enabled mobile‐responsive sidebar layout</li>
+          <li>Included summary charts in pop‑ups via Arcade expressions</li>
+          <li>Embedded responsive filter sliders</li>
+        </ul>
+      </details>
+      <p class="mt-4">
+        <a href="https://umass-amherst.maps.arcgis.com/home/item.html?id=d222d66fd018437cb51ed1811a5288c5" class="inline-block bg-blue-600 text-white py-2 px-4 rounded" target="_blank" rel="noopener noreferrer">
+          🚀 Launch web app
+        </a>
+      </p>
+    </section>
+
+    <!-- Survey123 Feedback Collection & Dashboard -->
+    <section class="bg-white rounded-lg shadow p-6">
+      <h2 class="text-2xl font-semibold mb-4">Survey123 Feedback Collection & Dashboard</h2>
+      <a href="https://survey123.arcgis.com/share/162595dbe014466f9663658743196129" target="_blank" rel="noopener noreferrer">
+        <img src="screenshots/survey123-thumb.png" alt="Thumbnail of Survey123 form and dashboard" class="w-full mb-4 rounded">
+      </a>
+      <p>This Survey123 solution captures community feedback on local GIS workshops, allowing participants to submit ratings, comments, and photos. The live results dashboard displays dynamic bar charts, pie graphs, and a filtered table of responses embedded within Experience Builder. Users can filter by workshop date, attendee role, and rating. The setup demonstrates real-time data collection and interactive visualization to inform future training sessions.</p>
+      <details class="mt-4">
+        <summary class="font-medium cursor-pointer">What’s new since the initial survey form submission?</summary>
+        <ul class="list-disc list-inside mt-2">
+          <li>Enabled anonymous submissions and photo attachments</li>
+          <li>Designed real-time dashboard with dynamic chart widgets</li>
+          <li>Embedded dashboard into Experience Builder page</li>
+          <li>Added filter controls for date range and attendee role</li>
+          <li>Custom themed page layout following branding guidelines</li>
+          <li>Tested mobile form view and dashboard responsiveness</li>
+        </ul>
+      </details>
+      <p class="mt-4">
+        <a href="https://survey123.arcgis.com/share/162595dbe014466f9663658743196129" class="inline-block bg-blue-600 text-white py-2 px-4 rounded" target="_blank" rel="noopener noreferrer">
+          🚀 Launch survey
+        </a>
+      </p>
+    </section>
+
+  </main>
+  <footer class="bg-white shadow-inner mt-12">
+    <div class="container mx-auto p-6 text-center text-sm text-gray-600">
+      Created by Zubana Parshah • NRC 588 Web GIS • Spring 2025
+    </div>
+  </footer>
+</body>
+</html>
 
